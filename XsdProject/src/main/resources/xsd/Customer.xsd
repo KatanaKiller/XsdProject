@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://imcs.sam/Customer" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://imcs.sam/Customer">
+
+    <complexType name="PaymentMethod">
+    	<sequence>
+    		<element name="cardNumber" type="string"></element>
+    		<element name="cardName" type="string"></element>
+    		<element name="dateForm" type="string"></element>
+    		<element name="dateType" type="string"></element>
+    		<element name="cardType">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="CREDITCARD"></enumeration>
+    					<enumeration value="DEBITCARD"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <element name="Customer" type="tns:customer"></element>
+    
+    <complexType name="customer">
+    	<sequence>
+    		<element name="customerId" type="int"></element>
+    		<element name="name" type="string"></element>
+    		<element name="dateOfBirth" type="date"></element>
+    		<element name="annualSalary" type="int"></element>
+    		<element name="address" type="tns:Address" maxOccurs="unbounded" minOccurs="0"></element>
+    		<element name="Payment" type="tns:PaymentMethod" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="Address">
+    	<sequence>
+    		<element name="city" type="string"></element>
+    		<element name="state" type="string"></element>
+    		<element name="zip" type="int"></element>
+    	</sequence>
+    </complexType>
+  	
+    
+</schema>

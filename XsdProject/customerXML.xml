@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer xmlns="http://imcs.sam/Customer">
+    <customerId>11</customerId>
+    <name>VIjay Dinanath Chauhan</name>
+    <dateOfBirth>2017-11-06-06:00</dateOfBirth>
+    <annualSalary>1000</annualSalary>
+    <Payment>
+        <city>Houston</city>
+        <state>Texas</state>
+        <zip>77705</zip>
+    </Payment>
+    <payment>
+        <cardNumber>1456289356477128</cardNumber>
+        <cardName>VISA</cardName>
+        <cardType>CreditCard</cardType>
+    </payment>
+</customer>

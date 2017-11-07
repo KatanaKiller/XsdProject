@@ -1,0 +1,18 @@
+{
+  "customerId" : 11,
+  "name" : "VIjay Dinanath Chauhan",
+  "dateOfBirth" : 1509948000000,
+  "annualSalary" : 1000,
+  "address" : [ {
+    "city" : "Houston",
+    "state" : "Texas",
+    "zip" : 77705
+  } ],
+  "payment" : [ {
+    "cardNumber" : "1456289356477128",
+    "cardName" : "VISA",
+    "dateForm" : null,
+    "dateType" : null,
+    "cardType" : "CreditCard"
+  } ]
+}
